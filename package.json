@@ -1,0 +1,35 @@
+{
+  "name": "glitchbox",
+  "version": "1.0.0",
+  "description": "Glitch your files precisely",
+  "main": "./dist/index.js",
+  "author": "Jakub Kopańko",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "docs": "typedoc --out docs src"
+  },
+  "devDependencies": {
+    "@types/listr": "^0.14.2",
+    "@types/node": "^13.9.1",
+    "ts-node": "^8.6.2",
+    "typedoc": "^0.17.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "bfj": "^7.0.2",
+    "big-json": "^3.1.0",
+    "child_process": "^1.0.2",
+    "consola": "^2.11.3",
+    "del": "^5.1.0",
+    "event-stream": "^4.0.1",
+    "ffedit-static": "^1.0.0",
+    "fs-jetpack": "^2.2.3",
+    "listr": "^0.14.3",
+    "ora": "^4.0.3",
+    "tempy": "^0.5.0",
+    "vm2": "^3.9.1"
+  }
+}
