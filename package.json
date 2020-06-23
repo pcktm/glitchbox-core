@@ -5,11 +5,13 @@
   "main": "./dist/index.js",
   "author": "Jakub Kopańko",
   "license": "MIT",
-  "private": false,
+  "repository": "github:pcktm/glitchbox-core",
+  "files": ["dist/**/*"],
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc",
-    "docs": "typedoc --out docs src"
+    "docs": "typedoc --out docs src",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/listr": "^0.14.2",

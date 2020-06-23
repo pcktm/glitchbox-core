@@ -59,6 +59,7 @@ export class Processor {
    * This function loads feature data, executes a provided glitching function and saves it all to disk.
    * @param file A {@link File} to be glitched
    * @param glitchingFunction A function that processes glitch data to be executed in sandbox
+   * @todo Maybe make it run on gpu, using gpu.js? That would be really cool!
    */
   async glitch(file: File) {
     this.JSONPath = file.extractedFeaturePath;
