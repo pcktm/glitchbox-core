@@ -8,13 +8,7 @@ import bfj from 'bfj'
 import fs from 'fs';
 import path from 'path';
 import bigJSON from 'big-json';
-import { NodeVM } from "vm2";
-
-/** A sandbox to execute unsafe javascript in */
-const vm = new NodeVM({
-  console: "inherit",
-  sandbox: {}
-});
+// import { NodeVM } from "vm2";
 
 /** This class loads, saves and glitches data */
 export class Processor {
@@ -31,7 +25,7 @@ export class Processor {
    * @param path Path to script file
    */
   loadGlitchingFunction(path: string) {
-    this.glitchingFunction = vm.run(path);
+    this.glitchingFunction = require(path);
   }
 
   /** Parses feature data from JSON exported by `ffedit`.
