@@ -6,7 +6,9 @@
   "author": "Jakub Kopańko",
   "license": "MIT",
   "repository": "github:pcktm/glitchbox-core",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc",
@@ -27,7 +29,6 @@
     "consola": "^2.13.0",
     "del": "^5.1.0",
     "event-stream": "^4.0.1",
-    "ffedit-static": "^1.0.0",
     "fs-jetpack": "^2.4.0",
     "listr": "^0.14.3",
     "ora": "^4.0.4",
