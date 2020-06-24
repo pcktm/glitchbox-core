@@ -1,6 +1,6 @@
 {
   "name": "glitchbox-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Glitch your files precisely",
   "main": "./dist/index.js",
   "author": "Jakub Kopańko",
